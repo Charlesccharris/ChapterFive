@@ -7,7 +7,7 @@ class Homework5_40{
         int tails = 0;
         int flips = 0;
 
-        System.out.println("This program will flip a coin 5,000 times, and display total number of heads and tails");
+        System.out.println("This program will flip a coin 1,000,000 times, and display total number of heads and tails");
         while(flips < 1000000){
         int coin = (int)(Math.random() * 10 % 2);
 	        if(coin == 0){
