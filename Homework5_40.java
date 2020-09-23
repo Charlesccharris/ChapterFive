@@ -2,21 +2,24 @@ class Homework5_40{
 	public static void main(String[] args){
 	/*(Simulation: heads or tails)
 	Write a program that simulates flipping a coin one million times and displays the number of heads and tails.*/
-	int rounds = 0;
-	int heads = 0;
-	int tails = 0;
-	double headsOrTails = 0;
 
-	for(rounds = 0; rounds < 1000000; rounds++){
-		headsOrTails = Math.random();
+        int heads = 0;
+        int tails = 0;
+        int flips = 0;
 
-		if(headsOrTails < 0.5)
-		tails++;
-		else
-		heads++;
-	}
-
-	System.out.println("It was " + tails + " tails and " + heads + " heads!");
-
-	}
+        System.out.println("This program will flip a coin 5,000 times, and display total number of heads and tails");
+        while(flips < 1000000){
+        int coin = (int)(Math.random() * 10 % 2);
+	        if(coin == 0){
+	        heads++;
+	        flips++;
+	        }
+	        else if(coin == 1){
+	        tails++;
+	        flips++;
+	        }
+        }
+        System.out.println("It was " + heads + " heads and " + tails + " tails");
+        }
 }
+
