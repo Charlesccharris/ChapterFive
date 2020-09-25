@@ -49,6 +49,6 @@ class Homework5_2{
 	long endTime = System.currentTimeMillis();
 	long totalTime = endTime - startTime;
 
-	System.out.println("Number of questions answered right: " + wins + "\nTest time was " + totalTime/1000 + " seconds\n" + done);
+	System.out.println("\nNumber of questions answered right: " + wins + "\nTest time was " + totalTime/1000 + " seconds\n" + done);
 	}
 }
