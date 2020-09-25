@@ -12,17 +12,18 @@ class Homework5_34 {
         int tied = 0;
         int won = 0;
         int lost = 0;
-        char Rock = 'r';
-        char Paper = 'p';
-        char Scissor = 's';
+        char Rock = 'R';
+        char Paper = 'P';
+        char Scissor = 'S';
 
         while(2>Math.abs(won - lost)){
 
         int number1 = (int)(Math.random() * 100);
         int computerHand = number1 % 3;
-        System.out.print("\n(r)ock, (p)aper, (s)cissors : ");
+        System.out.print("\n(R)ock, (P)aper, (S)cissors : ");
 
         char guess = input.next().charAt(0);
+	guess = Character.toUpperCase(guess);
 
                 if(guess != Rock && guess != Paper && guess != Scissor){
                 System.out.println("Really, " + guess + "? You had one job.");
