@@ -16,7 +16,7 @@ class Homework5_34 {
         char Paper = 'p';
         char Scissor = 's';
 
-        while(2>Math.abs(won -lost)){
+        while(2>Math.abs(won - lost)){
 
         int number1 = (int)(Math.random() * 100);
         int computerHand = number1 % 3;
@@ -74,7 +74,8 @@ class Homework5_34 {
 			}
 		}
 	}
-        System.out.println("Game over\nYour final score was " + won + " wins " + tied + " ties and " + lost + " losses.");
+        System.out.println("\nGame over\nYour final score was " + won + " wins " + tied + " ties and " + lost + " losses.");
+
 	if(won>lost)
 	System.out.println("You won");
 	else if(lost>won)
