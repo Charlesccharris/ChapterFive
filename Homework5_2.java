@@ -15,7 +15,7 @@ class Homework5_2{
 
 	System.out.print("How many rounds of subtraction: ");
 	totalRounds = input.nextInt();
-		
+
 	long startTime = System.currentTimeMillis();
 
 	for(round = 0; round < totalRounds; round++){
@@ -48,6 +48,6 @@ class Homework5_2{
 	long endTime = System.currentTimeMillis();
 	long totalTime = endTime - startTime;
 
-	System.out.println("Number of questions answered right: " + wins + "\nTest time was " + totalTime/1000 + " seconds\n" +done);
+	System.out.println("Number of questions answered right: " + wins + "\nTest time was " + totalTime/1000 + " seconds\n" + done);
 	}
 }

@@ -4,6 +4,7 @@ class Homework5_40{
 	public static void main(String[] args){
 	/*(Simulation: heads or tails)
 	Write a program that simulates flipping a coin one million times and displays the number of heads and tails.*/
+
 	Scanner input = new Scanner(System.in);
 
         int heads = 0;
@@ -28,6 +29,7 @@ class Homework5_40{
 		System.out.println("That's not a valid input.");
 		System.exit(1);
 	}
+
         System.out.println("This program will flip a coin " + totalFlips + " times, and display total number of heads and tails");
 
 	while(flips < totalFlips){
@@ -41,7 +43,8 @@ class Homework5_40{
 		flips++;
 	        }
         }
+
         System.out.println("The outcome is " + heads + " heads and " + tails + " tails");
+
         }
 }
-
