@@ -25,7 +25,7 @@ class Homework5_40{
 	else if(choice == 'M')
 		totalFlips *= 1000000;
 	else{
-		System.out.println("NO");
+		System.out.println("That's not a valid input.");
 		System.exit(1);
 	}
         System.out.println("This program will flip a coin " + totalFlips + " times, and display total number of heads and tails");
@@ -41,7 +41,7 @@ class Homework5_40{
 		flips++;
 	        }
         }
-        System.out.println("It was " + heads + " heads and " + tails + " tails");
+        System.out.println("The outcome is " + heads + " heads and " + tails + " tails");
         }
 }
 
