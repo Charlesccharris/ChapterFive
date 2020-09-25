@@ -9,7 +9,7 @@ class Homework5_2{
 
 	Scanner input = new Scanner(System.in);
 	int round = 0;
-	String done = " ";
+	String done = "";
 	int wins = 0;
 	int totalRounds = 0;
 
@@ -45,6 +45,7 @@ class Homework5_2{
 
 	done += "\n" + number1 + "-" + number2 + "=" + guess + ((number1 - number2 == guess) ? " correct" : " wrong");
 	}
+
 	long endTime = System.currentTimeMillis();
 	long totalTime = endTime - startTime;
 
