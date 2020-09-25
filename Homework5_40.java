@@ -28,11 +28,17 @@ class Homework5_40{
 		System.out.println("NO");
 		System.exit(1);
 	}
-        System.out.println("This program will flip a coin " + totalFlips + " times, and display total number of heads and tails"); while(flips < totalFlips){ int 
-        coin = (int)(Math.random() * 10 % 2);
-	        if(coin == 0){ heads++; flips++;
+        System.out.println("This program will flip a coin " + totalFlips + " times, and display total number of heads and tails");
+
+	while(flips < totalFlips){
+	int coin = (int)(Math.random() * 10 % 2);
+	        if(coin == 0){
+		heads++;
+		flips++;
 	        }
-	        else if(coin == 1){ tails++; flips++;
+	        else if(coin == 1){
+		tails++;
+		flips++;
 	        }
         }
         System.out.println("It was " + heads + " heads and " + tails + " tails");
